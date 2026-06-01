@@ -1,6 +1,9 @@
+# Single-Key Request Sequence
+
 ```mermaid
 sequenceDiagram
-autonumber
+    autonumber
+
     participant C as Client
     participant SM as ShardMaster
     participant G1 as Replica Group 1
