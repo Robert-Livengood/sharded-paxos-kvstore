@@ -8,6 +8,8 @@ sequenceDiagram
     participant P as Paxos
     participant KV as KVStore
 
+    autonumber
+
     C->>SM: Query config for key
     SM-->>C: Shard owned by Group 1
     C->>G1: Put or Get request
@@ -15,5 +17,5 @@ sequenceDiagram
     P-->>G1: Operation chosen
     G1->>KV: Apply operation
     KV-->>G1: Result
-    G1-->>C: Reply
+    G1-->>C: Reply Ok
 ```
