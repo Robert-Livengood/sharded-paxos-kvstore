@@ -17,5 +17,5 @@ sequenceDiagram
     P-->>G1: Operation chosen
     G1->>KV: Apply operation
     KV-->>G1: Result
-    G1-->>C: Reply Ok
+    G1-->>C: Reply
 ```
