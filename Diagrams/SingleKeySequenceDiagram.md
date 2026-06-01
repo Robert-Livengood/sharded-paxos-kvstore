@@ -2,8 +2,6 @@
 
 ```mermaid
 sequenceDiagram
-    autonumber
-
     participant C as Client
     participant SM as ShardMaster
     participant G1 as Replica Group 1
@@ -12,7 +10,7 @@ sequenceDiagram
 
     C->>SM: Query config for key
     SM-->>C: Shard owned by Group 1
-    C->>G1: Put/Get/Append request
+    C->>G1: Put or Get request
     G1->>P: Propose operation
     P-->>G1: Operation chosen
     G1->>KV: Apply operation
